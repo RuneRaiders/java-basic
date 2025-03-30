@@ -12,5 +12,13 @@ public class DataCountMain3 {
         Data3 data3 = new Data3("C");
         System.out.println("C count=" + Data3.count);
 
+        // 추가
+        // 인스턴스를 통한 접근
+        Data3 data4 = new Data3("D");
+        System.out.println(data4.count); // Static member 'static1.Data3.count' accessed via instance reference
+
+        // 클래스를 통한 접근
+        System.out.println(Data3.count);
+
     }
 }
